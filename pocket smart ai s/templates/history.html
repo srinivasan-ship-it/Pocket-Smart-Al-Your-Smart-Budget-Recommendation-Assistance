@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+History — PocketSmart AI
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-head">
+
+    <p class="eyebrow">
+        SAVED PLANS
+    </p>
+
+    <h1>
+        Recommendation History
+    </h1>
+
+    <p>
+        Your latest recommendation requests
+        are shown here.
+    </p>
+
+</div>
+
+
+<div
+    id="history"
+    class="history-list"
+></div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+    loadHistory();
+</script>
+
+{% endblock %}

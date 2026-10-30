@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Home Interior Planner
+{% endblock %}
+
+
+{% block content %}
+
+<div class="page-head">
+
+    <p class="eyebrow">
+        PLANNER 01
+    </p>
+
+    <h1>
+        Home Interior
+    </h1>
+
+    <p>
+        Plan furniture, lighting and
+        decor within your budget.
+    </p>
+
+</div>
+
+
+<div class="planner-layout">
+
+
+    <form
+        id="homeForm"
+        class="card form-card"
+    >
+
+        <label>
+
+            Budget (₹)
+
+            <input
+                name="budget"
+                type="number"
+                min="1"
+                step="100"
+                required
+            >
+
+        </label>
+
+
+        <label>
+
+            Room Type
+
+            <select name="room_type">
+
+                <option>
+                    Living Room
+                </option>
+
+                <option>
+                    Bedroom
+                </option>
+
+                <option>
+                    Kitchen
+                </option>
+
+                <option>
+                    Dining Room
+                </option>
+
+            </select>
+
+        </label>
+
+
+        <label>
+
+            Style
+
+            <select name="style">
+
+                <option>
+                    Modern
+                </option>
+
+                <option>
+                    Minimal
+                </option>
+
+                <option>
+                    Traditional
+                </option>
+
+                <option>
+                    Luxury
+                </option>
+
+            </select>
+
+        </label>
+
+
+        <label>
+
+            Items
+
+            <input
+                name="items"
+                placeholder="Sofa, Lighting, Ceiling Fan, Storage"
+            >
+
+        </label>
+
+
+        <label>
+
+            City
+
+            <input
+                name="city"
+                value="Chennai"
+            >
+
+        </label>
+
+
+        <button
+            class="button"
+            type="submit"
+        >
+
+            Generate Recommendations
+
+        </button>
+
+    </form>
+
+
+    <div
+        id="result"
+        class="result"
+    ></div>
+
+
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+    bindHomePlanner();
+</script>
+
+{% endblock %}

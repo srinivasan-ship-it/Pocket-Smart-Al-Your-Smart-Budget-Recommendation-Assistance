@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Dashboard — PocketSmart AI
+{% endblock %}
+
+
+{% block content %}
+
+<section class="page-head">
+
+    <p class="eyebrow">
+        YOUR SPACE
+    </p>
+
+    <h1>
+        Dashboard
+    </h1>
+
+    <p id="welcome">
+        Checking your session...
+    </p>
+
+</section>
+
+
+<div class="grid three">
+
+    <a
+        class="card feature"
+        href="/home-planner"
+    >
+
+        <b>
+            🏠 Home Planner
+        </b>
+
+        <p>
+            Plan your room within budget.
+        </p>
+
+    </a>
+
+
+    <a
+        class="card feature"
+        href="/party-planner"
+    >
+
+        <b>
+            🎉 Party Planner
+        </b>
+
+        <p>
+            Build a balanced event budget.
+        </p>
+
+    </a>
+
+
+    <a
+        class="card feature"
+        href="/jewelry-planner"
+    >
+
+        <b>
+            💎 Jewelry Planner
+        </b>
+
+        <p>
+            Match jewelry to occasion and style.
+        </p>
+
+    </a>
+
+</div>
+
+
+<div class="card">
+
+    <h2>
+        Account
+    </h2>
+
+    <p id="account"></p>
+
+
+    <button
+        class="button secondary"
+        onclick="logout()"
+    >
+        Logout
+    </button>
+
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+    loadDashboard();
+</script>
+
+{% endblock %}

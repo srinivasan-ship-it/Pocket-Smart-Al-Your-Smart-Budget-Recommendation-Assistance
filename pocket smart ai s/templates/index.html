@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% block title %}
+PocketSmart AI — Smart Budget Planner
+{% endblock %}
+
+
+{% block content %}
+
+<section class="hero">
+
+    <div>
+
+        <p class="eyebrow">
+            GENAI BUDGET ASSISTANT
+        </p>
+
+        <h1>
+            Plan more.
+            <br>
+            <span>Spend smarter.</span>
+        </h1>
+
+        <p class="lead">
+
+            PocketSmart AI turns your budget
+            into practical ideas for home
+            interiors, parties and jewelry.
+
+        </p>
+
+        <div class="actions">
+
+            <a
+                class="button"
+                href="/register"
+            >
+                Get Started
+            </a>
+
+            <a
+                class="button secondary"
+                href="/login"
+            >
+                Login
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="hero-icon">
+            ₹
+        </div>
+
+        <h3>
+            One budget. Clear choices.
+        </h3>
+
+        <p>
+
+            AI-assisted planning with budget
+            allocations, recommendations and
+            useful marketplace search links.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="grid three">
+
+    <a
+        class="card feature"
+        href="/home-planner"
+    >
+
+        <b>
+            🏠 Home Interior
+        </b>
+
+        <p>
+
+            Furniture, lighting, decor
+            and room recommendations.
+
+        </p>
+
+    </a>
+
+
+    <a
+        class="card feature"
+        href="/party-planner"
+    >
+
+        <b>
+            🎉 Party Planner
+        </b>
+
+        <p>
+
+            Food, venue, decoration
+            and entertainment allocation.
+
+        </p>
+
+    </a>
+
+
+    <a
+        class="card feature"
+        href="/jewelry-planner"
+    >
+
+        <b>
+            💎 Jewelry
+        </b>
+
+        <p>
+
+            Occasion and outfit-aware
+            jewelry suggestions with
+            optional image input.
+
+        </p>
+
+    </a>
+
+</section>
+
+{% endblock %}
